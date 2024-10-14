@@ -1,27 +1,50 @@
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <link href="style.css" rel="stylesheet">
-    <title>Моя визитка</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Супер крутое портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-<div id="business-card">
-    <img src="https://sun1-54.userapi.com/s/v1/if2/78GN1GDi7ulsOBDjR92kMVO93YFs3CpCRCCWpVdV5EWqwl466PQD321xjXJYYYd4cvYZ-aYnixBp5OwIlQOOmR3D.jpg?quality=95&crop=1,203,631,631&as=50x50,100x100,200x200,400x400&ava=1&u=R4CZHP6F64MDYgHxj7J15feCQBgTNO2EJpjUAAndoSs&cs=200x200"
-         class="Picture">
-    <h1>Cатлыков Санджар</h1>
-    <p>16 лет</p>
-    <p>Увлечения:</p>
-    <ul>
-        <li>Чтение книг</li>
-        <li>Астрономия</li>
-        <li>Программирование</li>
-    </ul>
-    <ul>
-        <li>Телефон: +7(962) 173-93-13</li>
-        <li>Email: satlykovs@gmail.com</li>
-        <li>Город: Киров, Калужская область</li>
-    </ul>
-    <a href="#" class="button">Связаться</a>
-</div>
+    <div class="menu-button" id="menu-button">☰</div>
+    
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="projs.html">Проекты</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main class="content" id="home">
+        <section class="centered-content">
+            <div class="photo">
+                <img src="https://sun164-2.userapi.com/impg/zAhsY4aOpWAvYqwl2n1OeWNXMQLQtCwXN6DLtQ/5EOjlOBbuJY.jpg?size=2400x1584&quality=95&sign=000d2a86d71d1430d8a57cb60c41d381&type=album" alt="Ваша фотография">
+            </div>
+            <div class="description">
+                <h1>Сатлыков Санджар</h1>
+                <p>The main hater of the frontend</p>
+                <div class="tech-stack">
+                    <span class="tech">ASP.NET CORE</span>
+                    <span class="tech">C#</span>
+                    <span class="tech">EF CORE</span>
+                    <span class="tech">Docker</span>
+                    <span class="tech">PostgreSQL</span>
+                    <span class="tech">Kafka</span>
+                    <span class="tech">Redis</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+
+
+    <script src="script.js"></script>
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
 </body>
 </html>

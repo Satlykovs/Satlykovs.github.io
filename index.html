@@ -5,25 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Супер крутое портфолио</title>
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" />
 </head>
 <body>
-    <div class="menu-button" id="menu-button">☰</div>
-    
-    <nav class="menu" id="menu">
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="projs.html">Проекты</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-    </nav>
 
-    <main class="content" id="home">
-        <section class="centered-content">
-            <div class="photo">
-                <img src="https://sun164-2.userapi.com/impg/zAhsY4aOpWAvYqwl2n1OeWNXMQLQtCwXN6DLtQ/5EOjlOBbuJY.jpg?size=2400x1584&quality=95&sign=000d2a86d71d1430d8a57cb60c41d381&type=album" alt="Ваша фотография">
-            </div>
-            <div class="description">
+
+    <div id="fullpage">
+        <div class="section" id="home">
+            <div class="content">
+                <img src="https://sun9-7.userapi.com/impg/zAhsY4aOpWAvYqwl2n1OeWNXMQLQtCwXN6DLtQ/5EOjlOBbuJY.jpg?size=2400x1584&quality=95&sign=000d2a86d71d1430d8a57cb60c41d381&type=album" alt="Сатлыков Санджар" class="profile-photo">
                 <h1>Сатлыков Санджар</h1>
                 <p>The main hater of the frontend</p>
                 <div class="tech-stack">
@@ -36,15 +26,41 @@
                     <span class="tech">Redis</span>
                 </div>
             </div>
-        </section>
-    </main>
-    
+        </div>
+        <div class="section" id="projects">
+            <h1>Мои проекты и достижения</h1>
+            <div class="projects">
+                <div class="project">
+                    <h2>Проект 1</h2>
+                    <p>Онлайн - библиотека, в которой пользователи могут обмениваться купленным книгами.</p>
+                </div>
+                <div class="project">
+                    <h2>Проект 2</h2>
+                    <p>Проект с Хакатона 2024 - веб-платформа для организации "KOD&PUZZLE", предоставляет из себя сайт с образовательными материалами.</p>
+                </div>
+                <div class="project">
+                    <h2>Проект 3</h2>
+                    <p>Проект на микросервисной архитектуре с применением брокеров сообщений и Docker - контейнеризации для удобства развертки. (в разработке)</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="contacts">
+            <h1>Связаться со мной</h1>
+            <p>Я всегда открыт для общения и сотрудничества. Вы можете связаться со мной через один из следующих каналов:</p>
+            <div class="contacts">
+                <a href="https://vk.com/satlykovs" class="contact-button" target="_blank">
+                    <img src="https://img.icons8.com/fluent/48/000000/vk-circled.png" alt="VK" class="icon" /> ВКонтакте
+                </a>
+                <a href="https://t.me/Satlykovs" class="contact-button" target="_blank">
+                    <img src="https://img.icons8.com/fluent/48/000000/telegram-app.png" alt="Telegram" class="icon" /> Телеграм
+                </a>
+                <a href="https://github.com/Satlykovs" class="contact-button" target="_blank">
+                    <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub" class="icon" /> GitHub
+                </a>
+            </div>
+        </div>
 
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <script src="script.js"></script>
-    <div class="loader" id="loader">
-        <div class="spinner"></div>
-    </div>
 </body>
 </html>
